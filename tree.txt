@@ -1,1 +1,41 @@
 
+AlgorithmExamples/
+├── Java/
+│   ├── Sorting/
+│   │   ├── BubbleSort.java
+│   │   ├── QuickSort.java
+│   ├── Searching/
+│   │   ├── BinarySearch.java
+│   │   ├── LinearSearch.java
+│   ├── Graph/
+│   │   ├── Dijkstra.java
+│   │   ├── BFS.java
+│   ├── DynamicProgramming/
+│       ├── Fibonacci.java
+│       ├── Knapsack.java
+├── Python/
+│   ├── Sorting/
+│   │   ├── bubble_sort.py
+│   │   ├── quick_sort.py
+│   ├── Searching/
+│   │   ├── binary_search.py
+│   │   ├── linear_search.py
+│   ├── Graph/
+│   │   ├── dijkstra.py
+│   │   ├── bfs.py
+│   ├── DynamicProgramming/
+│       ├── fibonacci.py
+│       ├── knapsack.py
+├── CSharp/
+    ├── Sorting/
+    │   ├── BubbleSort.cs
+    │   ├── QuickSort.cs
+    ├── Searching/
+    │   ├── BinarySearch.cs
+    │   ├── LinearSearch.cs
+    ├── Graph/
+    │   ├── Dijkstra.cs
+    │   ├── BFS.cs
+    ├── DynamicProgramming/
+        ├── Fibonacci.cs
+        ├── Knapsack.cs
