@@ -1,6 +1,6 @@
 # Algorithm Examples
 
-Reference guide for basic algorithms and examples of implementations in Java, Python, and C#.  
+This repository contains implementations of various algorithms in Java, Python, and C#. These examples are provided to demonstrate proficiency in algorithm design and analysis, and to serve as a reference guide.
 
 ## Table of Contents
 - [Sorting Algorithms](#sorting-algorithms)
@@ -26,7 +26,8 @@ Reference guide for basic algorithms and examples of implementations in Java, Py
 ### Bubble Sort
 Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
 
-#### Algorithm Explanation  
+#### Algorithm Explanation
+Bubble Sort works as follows:
 1. Compare the first two elements. If the first is greater than the second, swap them.
 2. Move to the next pair of elements and repeat the comparison and swap if necessary.
 3. Continue this process for each pair of adjacent elements to the end of the list.
@@ -45,6 +46,7 @@ Bubble Sort is a simple sorting algorithm that repeatedly steps through the list
 Quick Sort is an efficient, comparison-based sorting algorithm that uses the divide-and-conquer approach. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays according to whether they are less than or greater than the pivot. The sub-arrays are then sorted recursively.
 
 #### Algorithm Explanation
+Quick Sort works as follows:
 1. Pick a pivot element from the array. Common choices include:
    - The first element.
    - The last element.
@@ -65,10 +67,11 @@ Quick Sort is an efficient, comparison-based sorting algorithm that uses the div
 
 ---  
 
-### Merge Sort  
+### Merge Sort
 Merge Sort is an efficient, stable, and comparison-based sorting algorithm. It divides the input array into two halves, recursively sorts each half, and then merges the two sorted halves to produce the final sorted array.
 
-#### Algorithm Explanation  
+#### Algorithm Explanation
+Merge Sort works as follows:
 1. Divide the array into two halves.
 2. Recursively sort each half.
 3. Merge the two sorted halves into a single sorted array.
@@ -85,7 +88,8 @@ Merge Sort is an efficient, stable, and comparison-based sorting algorithm. It d
 ### Insertion Sort
 Insertion Sort is a simple and intuitive comparison-based sorting algorithm. It builds the final sorted array one element at a time, with the array being divided into a sorted and an unsorted region. Values from the unsorted region are picked and placed in their correct position in the sorted region.
 
-#### Algorithm Explanation  
+#### Algorithm Explanation
+Insertion Sort works as follows:
 1. Start with the first element, assuming it is sorted.
 2. Pick the next element and compare it with the elements in the sorted region.
 3. Shift all elements in the sorted region that are greater than the picked element to the right.
@@ -104,7 +108,8 @@ Insertion Sort is a simple and intuitive comparison-based sorting algorithm. It 
 ### Heap Sort
 Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure. It is similar to selection sort, but it uses a heap to find the maximum or minimum element more efficiently.
 
-#### Algorithm Explanation  
+#### Algorithm Explanation
+Heap Sort works as follows:
 1. Build a max heap from the input data. A max heap is a complete binary tree where the value of each node is greater than or equal to the values of its children.
 2. The largest item is stored at the root of the heap. Swap it with the last item of the heap and then reduce the size of the heap by one. 
 3. Heapify the root of the tree to ensure the heap property is maintained.
@@ -116,6 +121,48 @@ Heap Sort is a comparison-based sorting algorithm that uses a binary heap data s
 - **Worst Case:** The worst-case time complexity is also \(O(n \log n)\). This occurs regardless of the initial order of the elements, as the process of heapifying maintains the same complexity.
 
 - **Space Complexity:** The space complexity of Heap Sort is \(O(1)\), as it is an in-place sorting algorithm that only requires a constant amount of additional memory space.
+
+---  
+
+## Searching Algorithms
+
+### Binary Search
+Binary Search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing in half the portion of the list that could contain the item, until you have narrowed down the possible locations to just one.
+
+#### Algorithm Explanation
+Binary Search works as follows:
+1. Start with the middle element of the sorted array.
+2. If the middle element is equal to the target element, the search is complete.
+3. If the target element is less than the middle element, repeat the search with the left half of the array.
+4. If the target element is greater than the middle element, repeat the search with the right half of the array.
+5. Continue the process until the target element is found or the subarray size becomes zero.
+
+#### Running Time
+- **Best Case:** The best-case time complexity is \(O(1)\), which occurs when the target element is the middle element of the array.
+- **Average Case:** The average-case time complexity is \(O(\log n)\). This is because the array is divided in half during each step of the search.
+- **Worst Case:** The worst-case time complexity is also \(O(\log n)\), which occurs when the search continues until the smallest subarray size is reached.
+
+- **Space Complexity:** The space complexity of Binary Search is \(O(1)\) for the iterative version and \(O(\log n)\) for the recursive version due to the call stack.
+
+---
+
+### Linear Search
+Linear Search is a simple searching algorithm that checks each element in the list sequentially until the desired element is found or the list ends. It is the most straightforward search algorithm.
+
+#### Algorithm Explanation
+Linear Search works as follows:
+1. Start from the first element of the array.
+2. Compare the current element with the target element.
+3. If the current element is equal to the target element, the search is complete.
+4. If the current element is not equal to the target element, move to the next element and repeat step 2.
+5. Continue this process until the target element is found or the end of the array is reached.
+
+#### Running Time
+- **Best Case:** The best-case time complexity is \(O(1)\), which occurs when the target element is the first element of the array.
+- **Average Case:** The average-case time complexity is \(O(n)\). This occurs because, on average, the target element might be located in the middle of the array.
+- **Worst Case:** The worst-case time complexity is also \(O(n)\). This occurs when the target element is the last element of the array or not present in the array.
+
+- **Space Complexity:** The space complexity of Linear Search is \(O(1)\) as it requires a constant amount of additional memory space for variables.
 
 ---  
 
