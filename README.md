@@ -26,8 +26,7 @@ Reference guide for basic algorithms and examples of implementations in Java, Py
 ### Bubble Sort
 Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
 
-#### Algorithm Explanation
-Bubble Sort works as follows:
+#### Algorithm Explanation  
 1. Compare the first two elements. If the first is greater than the second, swap them.
 2. Move to the next pair of elements and repeat the comparison and swap if necessary.
 3. Continue this process for each pair of adjacent elements to the end of the list.
@@ -46,7 +45,6 @@ Bubble Sort works as follows:
 Quick Sort is an efficient, comparison-based sorting algorithm that uses the divide-and-conquer approach. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays according to whether they are less than or greater than the pivot. The sub-arrays are then sorted recursively.
 
 #### Algorithm Explanation
-Quick Sort works as follows:
 1. Pick a pivot element from the array. Common choices include:
    - The first element.
    - The last element.
@@ -67,11 +65,10 @@ Quick Sort works as follows:
 
 ---  
 
-### Merge Sort
+### Merge Sort  
 Merge Sort is an efficient, stable, and comparison-based sorting algorithm. It divides the input array into two halves, recursively sorts each half, and then merges the two sorted halves to produce the final sorted array.
 
-#### Algorithm Explanation
-Merge Sort works as follows:
+#### Algorithm Explanation  
 1. Divide the array into two halves.
 2. Recursively sort each half.
 3. Merge the two sorted halves into a single sorted array.
@@ -88,8 +85,7 @@ Merge Sort works as follows:
 ### Insertion Sort
 Insertion Sort is a simple and intuitive comparison-based sorting algorithm. It builds the final sorted array one element at a time, with the array being divided into a sorted and an unsorted region. Values from the unsorted region are picked and placed in their correct position in the sorted region.
 
-#### Algorithm Explanation
-Insertion Sort works as follows:
+#### Algorithm Explanation  
 1. Start with the first element, assuming it is sorted.
 2. Pick the next element and compare it with the elements in the sorted region.
 3. Shift all elements in the sorted region that are greater than the picked element to the right.
@@ -108,8 +104,7 @@ Insertion Sort works as follows:
 ### Heap Sort
 Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure. It is similar to selection sort, but it uses a heap to find the maximum or minimum element more efficiently.
 
-#### Algorithm Explanation
-Heap Sort works as follows:
+#### Algorithm Explanation  
 1. Build a max heap from the input data. A max heap is a complete binary tree where the value of each node is greater than or equal to the values of its children.
 2. The largest item is stored at the root of the heap. Swap it with the last item of the heap and then reduce the size of the heap by one. 
 3. Heapify the root of the tree to ensure the heap property is maintained.
