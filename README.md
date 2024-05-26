@@ -1,6 +1,6 @@
 # Algorithm Examples
 
-This repository contains implementations of various algorithms in Java, Python, and C#. These examples are provided to demonstrate proficiency in algorithm design and analysis, and to serve as a reference guide.
+Reference guide for basic algorithms and examples of implementations in Java, Python, and C#.  
 
 ## Table of Contents
 - [Sorting Algorithms](#sorting-algorithms)
