@@ -34,7 +34,7 @@ Bubble Sort works as follows:
 4. Repeat the entire process until no swaps are needed, indicating that the list is sorted.
 
 #### Running Time
-- **Best Case:** The best-case time complexity is \(O(n)\), which occurs when the array is already sorted. In this case, the algorithm only needs to make one pass through the array to confirm that it is sorted.
+- **Best Case:** The best-case time complexity is O(n), which occurs when the array is already sorted. In this case, the algorithm only needs to make one pass through the array to confirm that it is sorted.
 - **Average Case:** The average-case time complexity is O(nˆ2). This occurs when the elements are in random order.
 - **Worst Case:** The worst-case time complexity is also O(nˆ2). This occurs when the array is sorted in reverse order.
 
