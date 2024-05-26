@@ -35,10 +35,10 @@ Bubble Sort works as follows:
 
 #### Running Time
 - **Best Case:** The best-case time complexity is \(O(n)\), which occurs when the array is already sorted. In this case, the algorithm only needs to make one pass through the array to confirm that it is sorted.
-- **Average Case:** The average-case time complexity is \(O(n^2)\). This occurs when the elements are in random order.
-- **Worst Case:** The worst-case time complexity is also \(O(n^2)\). This occurs when the array is sorted in reverse order.
+- **Average Case:** The average-case time complexity is O(nˆ2). This occurs when the elements are in random order.
+- **Worst Case:** The worst-case time complexity is also O(nˆ2). This occurs when the array is sorted in reverse order.
 
-- **Space Complexity:** The space complexity of Bubble Sort is \(O(1)\), as it only requires a constant amount of additional memory space for variables.
+- **Space Complexity:** The space complexity of Bubble Sort is O(1), as it only requires a constant amount of additional memory space for variables.
 
 ---  
 
@@ -59,11 +59,11 @@ Quick Sort works as follows:
 4. Combine the sub-arrays and the pivot to get the sorted array.
 
 #### Running Time
-- **Best Case:** The best-case time complexity is \(O(n \log n)\), which occurs when the pivot element divides the array into two equal halves at each step.
-- **Average Case:** The average-case time complexity is \(O(n \log n)\). This is because, on average, the pivot will divide the array into reasonably balanced partitions.
-- **Worst Case:** The worst-case time complexity is \(O(n^2)\), which occurs when the pivot selection results in highly unbalanced partitions, such as when the array is already sorted, and the first or last element is always chosen as the pivot.
+- **Best Case:** The best-case time complexity is O(n log n), which occurs when the pivot element divides the array into two equal halves at each step.
+- **Average Case:** The average-case time complexity is O(n log n). This is because, on average, the pivot will divide the array into reasonably balanced partitions.
+- **Worst Case:** The worst-case time complexity is O(nˆ2), which occurs when the pivot selection results in highly unbalanced partitions, such as when the array is already sorted, and the first or last element is always chosen as the pivot.
 
-- **Space Complexity:** The space complexity of Quick Sort is \(O(\log n)\) due to the recursive call stack.
+- **Space Complexity:** The space complexity of Quick Sort is O(log n) due to the recursive call stack.
 
 ---  
 
@@ -77,11 +77,11 @@ Merge Sort works as follows:
 3. Merge the two sorted halves into a single sorted array.
 
 #### Running Time
-- **Best Case:** The best-case time complexity is \(O(n \log n)\). This occurs because the array is always divided into halves, and the merging process takes linear time.
-- **Average Case:** The average-case time complexity is \(O(n \log n)\). This is due to the divide-and-conquer approach, which ensures that the time complexity remains consistent.
-- **Worst Case:** The worst-case time complexity is also \(O(n \log n)\). This occurs regardless of the initial order of the elements, as the process of division and merging remains the same.
+- **Best Case:** The best-case time complexity is O(n log n). This occurs because the array is always divided into halves, and the merging process takes linear time.
+- **Average Case:** The average-case time complexity is O(n log n). This is due to the divide-and-conquer approach, which ensures that the time complexity remains consistent.
+- **Worst Case:** The worst-case time complexity is also O(n log n). This occurs regardless of the initial order of the elements, as the process of division and merging remains the same.
 
-- **Space Complexity:** The space complexity of Merge Sort is \(O(n)\), as it requires additional space to store the divided halves and the merged array.
+- **Space Complexity:** The space complexity of Merge Sort is O(n), as it requires additional space to store the divided halves and the merged array.
 
 ---  
 
@@ -97,11 +97,11 @@ Insertion Sort works as follows:
 5. Repeat steps 2-4 for all remaining elements in the unsorted region.
 
 #### Running Time
-- **Best Case:** The best-case time complexity is \(O(n)\), which occurs when the array is already sorted. In this case, each element is compared once with its predecessor.
-- **Average Case:** The average-case time complexity is \(O(n^2)\). This is because, on average, each insertion takes half the size of the array steps.
-- **Worst Case:** The worst-case time complexity is also \(O(n^2)\). This occurs when the array is sorted in reverse order, requiring each element to be compared with all previously sorted elements.
+- **Best Case:** The best-case time complexity is O(n), which occurs when the array is already sorted. In this case, each element is compared once with its predecessor.
+- **Average Case:** The average-case time complexity is O(n^2). This is because, on average, each insertion takes half the size of the array steps.
+- **Worst Case:** The worst-case time complexity is also O(n^2). This occurs when the array is sorted in reverse order, requiring each element to be compared with all previously sorted elements.
 
-- **Space Complexity:** The space complexity of Insertion Sort is \(O(1)\), as it only requires a constant amount of additional memory space for variables.
+- **Space Complexity:** The space complexity of Insertion Sort is O(1), as it only requires a constant amount of additional memory space for variables.
 
 ---  
 
@@ -116,11 +116,11 @@ Heap Sort works as follows:
 4. Repeat steps 2 and 3 until the heap size is reduced to one.
 
 #### Running Time
-- **Best Case:** The best-case time complexity is \(O(n \log n)\), which occurs because the heap operations (building the heap and heapify) are \(O(\log n)\) and there are \(n\) such operations.
-- **Average Case:** The average-case time complexity is \(O(n \log n)\). This is because the process of building the heap and performing the sort takes \(O(n \log n)\) time.
-- **Worst Case:** The worst-case time complexity is also \(O(n \log n)\). This occurs regardless of the initial order of the elements, as the process of heapifying maintains the same complexity.
+- **Best Case:** The best-case time complexity is O(n log n), which occurs because the heap operations (building the heap and heapify) are \(O(\log n)\) and there are \(n\) such operations.
+- **Average Case:** The average-case time complexity is O(n log n). This is because the process of building the heap and performing the sort takes \(O(n \log n)\) time.
+- **Worst Case:** The worst-case time complexity is also O(n log n). This occurs regardless of the initial order of the elements, as the process of heapifying maintains the same complexity.
 
-- **Space Complexity:** The space complexity of Heap Sort is \(O(1)\), as it is an in-place sorting algorithm that only requires a constant amount of additional memory space.
+- **Space Complexity:** The space complexity of Heap Sort is O(1), as it is an in-place sorting algorithm that only requires a constant amount of additional memory space.
 
 ---  
 
@@ -138,11 +138,11 @@ Binary Search works as follows:
 5. Continue the process until the target element is found or the subarray size becomes zero.
 
 #### Running Time
-- **Best Case:** The best-case time complexity is \(O(1)\), which occurs when the target element is the middle element of the array.
-- **Average Case:** The average-case time complexity is \(O(\log n)\). This is because the array is divided in half during each step of the search.
-- **Worst Case:** The worst-case time complexity is also \(O(\log n)\), which occurs when the search continues until the smallest subarray size is reached.
+- **Best Case:** The best-case time complexity is O(1), which occurs when the target element is the middle element of the array.
+- **Average Case:** The average-case time complexity is O(log n). This is because the array is divided in half during each step of the search.
+- **Worst Case:** The worst-case time complexity is also O(log n), which occurs when the search continues until the smallest subarray size is reached.
 
-- **Space Complexity:** The space complexity of Binary Search is \(O(1)\) for the iterative version and \(O(\log n)\) for the recursive version due to the call stack.
+- **Space Complexity:** The space complexity of Binary Search is O(1) for the iterative version and O(log n) for the recursive version due to the call stack.
 
 ---
 
@@ -158,11 +158,11 @@ Linear Search works as follows:
 5. Continue this process until the target element is found or the end of the array is reached.
 
 #### Running Time
-- **Best Case:** The best-case time complexity is \(O(1)\), which occurs when the target element is the first element of the array.
-- **Average Case:** The average-case time complexity is \(O(n)\). This occurs because, on average, the target element might be located in the middle of the array.
-- **Worst Case:** The worst-case time complexity is also \(O(n)\). This occurs when the target element is the last element of the array or not present in the array.
+- **Best Case:** The best-case time complexity is O(1), which occurs when the target element is the first element of the array.
+- **Average Case:** The average-case time complexity is O(n). This occurs because, on average, the target element might be located in the middle of the array.
+- **Worst Case:** The worst-case time complexity is also O(n). This occurs when the target element is the last element of the array or not present in the array.
 
-- **Space Complexity:** The space complexity of Linear Search is \(O(1)\) as it requires a constant amount of additional memory space for variables.
+- **Space Complexity:** The space complexity of Linear Search is O(1) as it requires a constant amount of additional memory space for variables.
 
 ---  
 
@@ -182,11 +182,11 @@ Dijkstra's Algorithm works as follows:
 7. The algorithm continues until all nodes have been visited or the smallest tentative distance among the unvisited nodes is infinity.
 
 #### Running Time
-- **Best Case:** The best-case time complexity is \(O(E + V \log V)\) using a priority queue and adjacency list, where \(V\) is the number of vertices and \(E\) is the number of edges.
-- **Average Case:** The average-case time complexity is also \(O(E + V \log V)\) under the same conditions.
-- **Worst Case:** The worst-case time complexity is \(O(E + V \log V)\), making it efficient for sparse graphs with a relatively low number of edges compared to vertices.
+- **Best Case:** The best-case time complexity is O(E + V log V) using a priority queue and adjacency list, where V is the number of vertices and E is the number of edges.
+- **Average Case:** The average-case time complexity is also O(E + V log V) under the same conditions.
+- **Worst Case:** The worst-case time complexity is O(E + V log V), making it efficient for sparse graphs with a relatively low number of edges compared to vertices.
 
-- **Space Complexity:** The space complexity of Dijkstra's Algorithm is \(O(V + E)\) due to the storage required for the graph representation and priority queue.
+- **Space Complexity:** The space complexity of Dijkstra's Algorithm is O(V + E) due to the storage required for the graph representation and priority queue.
 
 ---
 
@@ -203,11 +203,11 @@ Breadth-First Search works as follows:
 4. Repeat step 3 until the queue is empty.
 
 #### Running Time
-- **Best Case:** The best-case time complexity is \(O(V + E)\), where \(V\) is the number of vertices and \(E\) is the number of edges. This is because each vertex and each edge will be explored in the worst case.
-- **Average Case:** The average-case time complexity is also \(O(V + E)\) for the same reasons.
-- **Worst Case:** The worst-case time complexity is \(O(V + E)\), as BFS explores every vertex and edge.
+- **Best Case:** The best-case time complexity is O(V + E), where V is the number of vertices and E is the number of edges. This is because each vertex and each edge will be explored in the worst case.
+- **Average Case:** The average-case time complexity is also O(V + E) for the same reasons.
+- **Worst Case:** The worst-case time complexity is O(V + E), as BFS explores every vertex and edge.
 
-- **Space Complexity:** The space complexity of Breadth-First Search is \(O(V)\), due to the space required to store the queue and the visited nodes.
+- **Space Complexity:** The space complexity of Breadth-First Search is O(V), due to the space required to store the queue and the visited nodes.
 
 ---  
 
