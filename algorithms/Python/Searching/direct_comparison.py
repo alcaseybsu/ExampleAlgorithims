@@ -1,7 +1,8 @@
 ###
 # This is an interesting algorithm that compares two sets of data directly and returns a result. 
 # It can be used to compare two sets quickly as long as there are no repeats within each set, and as long as the sets aren't large. 
-# A good example would be comparing two lists of Social Security numbers to see if there are any matches.
+# A good example would be comparing two lists of Social Security numbers to see if there are any matches 
+# (in a list of different people's SSNs, there shouldn't be any repeats).
 ###
 
 set1 = [111223333, 222334444, 333445555, 444556666]
