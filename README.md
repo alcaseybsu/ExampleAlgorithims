@@ -166,3 +166,48 @@ Linear Search works as follows:
 
 ---  
 
+## Graph Algorithms
+
+### Dijkstra's Algorithm
+Dijkstra's Algorithm is a shortest-path algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. The algorithm works on both directed and undirected graphs with non-negative weights.
+
+#### Algorithm Explanation
+Dijkstra's Algorithm works as follows:
+1. Initialize the distance to the starting node to 0 and the distance to all other nodes to infinity.
+2. Set the starting node as the current node.
+3. For the current node, consider all its neighbors and calculate their tentative distances through the current node.
+4. Compare the newly calculated tentative distance to the current assigned value and assign the smaller one.
+5. Once all neighbors of the current node have been considered, mark the current node as visited.
+6. Select the unvisited node with the smallest tentative distance as the new current node and repeat steps 3-5.
+7. The algorithm continues until all nodes have been visited or the smallest tentative distance among the unvisited nodes is infinity.
+
+#### Running Time
+- **Best Case:** The best-case time complexity is \(O(E + V \log V)\) using a priority queue and adjacency list, where \(V\) is the number of vertices and \(E\) is the number of edges.
+- **Average Case:** The average-case time complexity is also \(O(E + V \log V)\) under the same conditions.
+- **Worst Case:** The worst-case time complexity is \(O(E + V \log V)\), making it efficient for sparse graphs with a relatively low number of edges compared to vertices.
+
+- **Space Complexity:** The space complexity of Dijkstra's Algorithm is \(O(V + E)\) due to the storage required for the graph representation and priority queue.
+
+---
+
+### Breadth-First Search (BFS)
+Breadth-First Search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the root (or an arbitrary node in the case of a graph) and explores all neighbors at the present depth prior to moving on to nodes at the next depth level.
+
+#### Algorithm Explanation
+Breadth-First Search works as follows:
+1. Initialize a queue and enqueue the starting node.
+2. Mark the starting node as visited.
+3. While the queue is not empty:
+   - Dequeue the front node from the queue.
+   - For the current node, consider all its unvisited neighbors, mark them as visited, and enqueue them.
+4. Repeat step 3 until the queue is empty.
+
+#### Running Time
+- **Best Case:** The best-case time complexity is \(O(V + E)\), where \(V\) is the number of vertices and \(E\) is the number of edges. This is because each vertex and each edge will be explored in the worst case.
+- **Average Case:** The average-case time complexity is also \(O(V + E)\) for the same reasons.
+- **Worst Case:** The worst-case time complexity is \(O(V + E)\), as BFS explores every vertex and edge.
+
+- **Space Complexity:** The space complexity of Breadth-First Search is \(O(V)\), due to the space required to store the queue and the visited nodes.
+
+---  
+
